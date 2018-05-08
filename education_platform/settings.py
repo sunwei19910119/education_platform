@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'operation',
     'organization',
     'xadmin',
-    # 'crispy_forms',
+    'crispy_forms',
     # 'captcha',
     # 'pure_pagination',
     'DjangoUeditor',
@@ -92,8 +92,10 @@ DATABASES = {
         'NAME': 'education',
         'USER': 'root',
         'PASSWORD': '123456',
-        'HOST':'192.168.5.199'
-
+        'HOST':'192.168.5.199',
+        'OPTIONS': {
+            "init_command": "SET foreign_key_checks=0;",
+        }
     }
 }
 
