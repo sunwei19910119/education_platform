@@ -39,8 +39,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'apps.users.apps.UsersConfig',
-     'users',
+    'users',
+    'courses',
+    'operation',
+    'organization',
+    'xadmin',
+    # 'crispy_forms',
+    # 'captcha',
+    # 'pure_pagination',
+    'DjangoUeditor',
 ]
 # 此处重载是为了使我们的UserProfile生效
 AUTH_USER_MODEL = "users.UserProfile"
