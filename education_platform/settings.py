@@ -27,9 +27,15 @@ SECRET_KEY = 'f=8o^(n&1s%#g43q2el35al2!0bpdbm3-8_-h8+k)$&#91peo1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
+# Application definition 注册我们的app
+# 设置邮箱和用户名均可登录
+AUTHENTICATION_BACKENDS = (
+    'users.views.CustomBackend',
+
+)
 # Application definition
 
 INSTALLED_APPS = [
@@ -45,8 +51,8 @@ INSTALLED_APPS = [
     'organization',
     'xadmin',
     'crispy_forms',
-    # 'captcha',
-    # 'pure_pagination',
+    'captcha',
+    'pure_pagination',
     'DjangoUeditor',
 ]
 # 此处重载是为了使我们的UserProfile生效
@@ -75,6 +81,9 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                "django.template.context_processors.i18n",
+                'django.template.context_processors.media',
+                'django.template.context_processors.request',
             ],
         },
     },
@@ -149,14 +158,15 @@ STATICFILES_DIRS = [
 
 # 发送邮件的setting设置
 
-# EMAIL_HOST = "smtp.qq.com"
-# EMAIL_PORT = 25
-# EMAIL_HOST_USER = "mxonline@mtianyan.cn"
-# EMAIL_HOST_PASSWORD = "ystfiwntwmonjebe"
-# EMAIL_USE_TLS= True
-# EMAIL_FROM = "mxonline@mtianyan.cn"
+EMAIL_HOST = "smtp.qq.com"
+EMAIL_PORT = 25
+EMAIL_HOST_USER = "754293591@qq.com"
+EMAIL_HOST_PASSWORD = "cqimdlyouzjqbgad"
+EMAIL_USE_TLS= True
+EMAIL_FROM = "754293591@qq.com"
 
 # 设置我们上传文件的路径
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')

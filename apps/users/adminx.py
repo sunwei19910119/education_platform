@@ -1,8 +1,8 @@
 # encoding: utf-8
 from courses.models import Course, Video, Lesson, CourseResource
 
-__author__ = 'sunwei19910119'
-__date__ = '2018/5/9 0009 08:02'
+__author__ = 'sunwei'
+__date__ = '2018/5/9 上午9:3'
 
 import xadmin
 from django.contrib.auth.models import Group, Permission
