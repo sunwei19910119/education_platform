@@ -8,7 +8,7 @@
 ## Quick Start
 
 ```
-$ git clone https://github.com/mtianyan/Mxonline3.git
+$ git clone https://git@github.com:sunwei19910119/education_platform.git
 $ cd Mxonline3
 $ pip install -r requirements.txt
 $ python manage.py runserver
