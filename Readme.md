@@ -18,5 +18,5 @@ use the address: http://127.0.0.1:8000/
 
 ## Contents：
 
-[原版视频课程地址:](https://coding.imooc.com/learn/list/78.html)
+[原版视频课程地址](https://coding.imooc.com/learn/list/78.html)
 

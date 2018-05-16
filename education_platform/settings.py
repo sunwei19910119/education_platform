@@ -160,10 +160,10 @@ STATICFILES_DIRS = [
 
 EMAIL_HOST = "smtp.qq.com"
 EMAIL_PORT = 25
-EMAIL_HOST_USER = "754293591@qq.com"
+EMAIL_HOST_USER = "xxx@qq.com"
 EMAIL_HOST_PASSWORD = "cqimdlyouzjqbgad"
 EMAIL_USE_TLS= True
-EMAIL_FROM = "754293591@qq.com"
+EMAIL_FROM = "xx@qq.com"
 
 # 设置我们上传文件的路径
 
